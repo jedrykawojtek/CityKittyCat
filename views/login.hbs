@@ -1,0 +1,28 @@
+{{#if errorMessage}}
+    <div>
+        <p>{{errorMessage}}</p>
+    </div>
+{{/if}}
+<div class="form-container">
+    <h2>Log in:</h2>
+    <form method="POST" action="/login">
+      <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <label class="sr-only" for="inlineFormInputName2">email</label>
+           <input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"name="email" placeholder="email">
+         </div>
+        </div>
+        <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <label class="sr-only" for="inlineFormInputName2">password</label>
+           <input type="password" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"name="password" placeholder="password">
+         </div>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Log in</button>
+        <h6>No account yet?   <a href="/register">Sign-up</a></h6>
+         <div class="gif">
+             <img src="/images/gifs/the_cryptographer_v01_800.gif" class="mw-100 h-100 d-inline-block" alt="">
+         </div> 
+         
+    </form>
+</div>

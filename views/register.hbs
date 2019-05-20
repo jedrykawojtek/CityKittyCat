@@ -1,0 +1,56 @@
+{{#if errorMessage}}
+    <div>
+        <p>{{errorMessage}}</p>
+    </div>
+{{/if}}
+{{#if errorValidateMsg1}}
+    <div>
+        <p>{{errorValidateMsg1}}</p>
+    </div>
+{{/if}}
+{{#if errorValidateMsg2}}
+    <div>
+        <p>{{errorValidateMsg2}}</p>
+    </div>
+{{/if}}
+
+<div class="form-container">
+    <h1>Registration form:</h1>
+    <form class="form-inline" method="POST" action="/register">
+       <div class="form-row ">
+         <div class="col-md-4 mb-3">
+           <label class="sr-only" for="inlineFormInputName2">Userame</label>
+           <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name="username" placeholder="name">
+         </div>
+        </div>
+          <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <label class="sr-only" for="inlineFormInputName2">email</label>
+           <input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"name="email" placeholder="email">
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="col-md-4 mb-3">
+           <label class="sr-only" for="inlineFormInputName2">password</label>
+           <input type="password" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"name="password" placeholder="password">
+         </div>
+        </div>
+        <small id="passwordHelpInline" class="form-text text-muted">
+            Must be 5-20 characters long.
+        </small>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                </label>
+            </div>
+        </div>
+         <button type="submit" class="btn btn-primary mb-2">Create an account</button>
+
+        <h6>Already have an account?   <a href="/login">Login</a></h6>
+    </form>
+</div>
+ <div class="gif">
+             <img src="images/gifs/benoitdrigny_catwoman_dribbble.gif" class="mw-100 h-100 d-inline-block" alt="">
+         </div> 

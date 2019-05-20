@@ -1,0 +1,164 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #2081C3;
+  /* box-shadow: 0px 0px 10px; */
+  color: #F7F9F9
+}
+
+.navbar ul {
+  padding: 25px 30px;
+  display: flex;
+  /* flex-direction: row; */
+  list-style-type: none;
+}
+
+li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  font-family: 'Lucida Grande';
+  font-size: 24px;
+  text-decoration: none;
+  color: #F7F9F9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  /* vertical-align: middle; */
+  border-style: none;
+  box-sizing: border-box;
+}
+
+.carousel-item-active{
+  font-family: 'Lucida Grande';
+  font-size: 24px;
+  text-decoration: none;
+  text-color: blue;
+}
+.quotation1 {
+  font-family: 'Lucida Grande';
+  display: flex;
+  justify-content: center;
+}
+.row1 {
+  font-family: 'Lucida Grande';
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  
+}
+/* .index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.index-container .button-div button {
+  background-color: #2081C3;
+  box-shadow: 0px 0px 10px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+.index-container .button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.index-container .button-div button a {
+  text-decoration: none;
+  color: #F7F9F9;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+} */
+
+img {
+  height: auto;
+  max-width: 100%;
+
+}
+.gif {
+  height: auto;
+  max-width: 200%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #0A2C42;
+  color: #F7F9F9;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* .social-icons {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons i {
+  color:#F7F9F9;
+  font-size: 2.5em;
+} */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

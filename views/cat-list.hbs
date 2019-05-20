@@ -1,0 +1,33 @@
+<div class="d-flex">
+
+        {{#each users}}
+            {{#if catDetails.name}}
+
+        <div class="card" style="width: 18rem;">
+        <img src="/images/cats/Luci1.jpg" class="card-img-top" alt="Cat picture">
+        {{!-- <img src="https://media14.s-nbcnews.com/j/MSNBC/Components/Video/201905/tdy_news_grumpy_cat_190517_1920x1080.760;428;7;70;5.jpg" class="card-img-top" alt="..."> --}}
+        <div class="card-body">
+            <h5 class="card-title">{{catDetails.name}}</h5>
+            <p class="card-text">This cat is {{catDetails.age}} years old and lives on {{streetName}}. It has a beautifull {{catDetails.furColour}} colored fur and loves to listen to {{catDetails.favouriteMusic}} or watch {{catDetails.favouriteTvShow}}.</p>
+            <a href="/detailed-cat/{{this._id}}" class="btn btn-primary">Go to details</a>
+        </div>
+        </div>
+
+        {{/if}}
+
+        {{/each}}
+    {{!-- <a href="/book-cat/{{}}" --}}
+</div>
+
+        {{!-- <h1>{{username}}</h1>
+        <h1>{{catDetails.name}}</h1>
+        <h1>{{catDetails.age}}</h1>
+        <h1>{{catDetails.streetName}}</h1>
+        <h1>{{catDetails.gender}}</h1>
+        <h1>{{catDetails.furColour}}</h1>
+        <h1>{{catDetails.favouriteMusic}}</h1>
+        <h1>{{catDetails.favouriteTvShow}}</h1>
+        <h1>{{catDetails.favouriteGame}}</h1>
+        <h1>{{catDetails.yoga}}</h1>
+        <h1>{{catDetails.scratching}}</h1>
+        <h1>{{catDetails.purring}}</h1> --}}
