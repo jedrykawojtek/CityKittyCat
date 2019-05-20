@@ -27,11 +27,12 @@ router.get("/make-booking/:userId" , (req, res) => {
         catSitter:  req.session.user._id
     })
     .then((request)=> {
-        res.send("Enjoy your experience")
+        res.render("make-booking")
     })
     .catch((err)=> {
         res.send("err")
     })
+
 
     //id of catowner -> req.body / req.params / req.query
     //id of current user -> req.session.user._id
