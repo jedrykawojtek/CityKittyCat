@@ -1,25 +1,37 @@
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+
 }
 
 a {
   color: #00B7FF;
 }
 
+.nav {
+ height: 10vh;
+}
+
 .navbar {
   width: 100%;
   background-color: #2081C3;
-  /* box-shadow: 0px 0px 10px; */
-  color: #F7F9F9
+  color: #F7F9F9;
+  height: 100%;
 }
 
 .navbar ul {
+  height: 100%;
   padding: 25px 30px;
   display: flex;
   /* flex-direction: row; */
   list-style-type: none;
 }
+
+.carousel-container {
+  width: 60%;
+}
+
 
 li {
   margin: 0 20px;
@@ -32,6 +44,22 @@ li {
   color: #F7F9F9;
 }
 
+.home-body {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240,244,255);
+}
+
+@keyframes rotateMe {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.navbar-brand{
+  animation: rotateMe 5s linear infinite;
+}
 img {
   height: auto;
   max-width: 100%;
@@ -44,7 +72,11 @@ img {
   font-family: 'Lucida Grande';
   font-size: 24px;
   text-decoration: none;
-  text-color: blue;
+  color: blue;
+}
+
+.ccarousel-item2 {
+  background-color: rgb(88, 26, 186);
 }
 .quotation1 {
   font-family: 'Lucida Grande';
@@ -57,6 +89,61 @@ img {
   justify-content: center;
   text-align: justify;
   
+}
+
+.cat-register {
+   padding: 25px;
+   padding-bottom: 0px;
+}
+
+.cat-register h1 {
+  padding: 10px; 
+}
+
+.form-check {
+  padding: 15px; 
+}
+.gif-carnage {
+  height: auto;
+  max-width: 200%;
+  display: flex;
+  justify-content: center;
+}
+.login-body {
+  background-color: rgb(12, 6, 51);
+  color: #F7F9F9;
+}
+.form-login-container{
+  padding: 25px;
+  padding-bottom: 0px;
+  
+}
+.gif-login {
+  height: auto;
+  max-width: 200%;
+  display: flex;
+  justify-content: center;
+}
+
+.registration-container{
+  background-color: rgb(219, 181,231);
+  color: #F7F9F9;
+}
+
+.gif-stroking {
+  height: auto;
+  max-width: 200%;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.form-inline {
+  border: none;
+
+}
+.form-container-register {
+  padding: 25px;
+  padding-bottom: 0px;
 }
 /* .index-container {
   display: flex;
@@ -95,11 +182,11 @@ img {
   justify-content: left;
 } */
 
-img {
+/* img {
   height: auto;
   max-width: 100%;
 
-}
+} */
 .gif {
   height: auto;
   max-width: 200%;
@@ -113,6 +200,7 @@ footer {
   padding: 25px 30px;
   text-align: center;
   text-decoration: none;
+  /* height: 25vh; */
 }
 
 /* Style all font awesome icons */
@@ -143,26 +231,124 @@ footer {
   color: darkblue;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+
+@media (min-width: 767px) and (max-width: 960px) {
+  .nav {
+    height: 15vh;
+   }
+   
+   .navbar {
+     width: 100%;
+     background-color: #2081C3;
+     color: #F7F9F9;
+     height: 100%;
+   }
+   
+   .navbar ul {
+     height: 100%;
+     padding: 25px 30px;
+     display: flex;
+     /* flex-direction: row; */
+     list-style-type: none;
+   }
+
+  .carousel img {
+    width:50%;
+  }
+    .carousel-item-active{
+      font-family: 'Lucida Grande';
+      font-size: 24px;
+      text-decoration: none;
+      text-color: blue;
+    }
+    .quotation1 {
+      font-family: 'Lucida Grande';
+      display: flex;
+      justify-content: center;
+    }
+  
+}
+
+
+
+@media (min-width: 961px) and (max-width: 1024px) {
+  .nav {
+    height: 15vh;
+   }
+   
+   .navbar {
+     width: 100%;
+     background-color: #2081C3;
+     color: #F7F9F9;
+     height: 100%;
+   }
+   
+   .navbar ul {
+     height: 100%;
+     padding: 25px 30px;
+     display: flex;
+     /* flex-direction: row; */
+     list-style-type: none;
+   }
+  
+  .carousel img {
+    width:50%;
+  }
+  .carousel-item-active {
+      font-family: 'Lucida Grande';
+      font-size: 24px;
+      text-decoration: none;
+      text-color: blue;
+    }
+    .quotation1 {
+      font-family: 'Lucida Grande';
+      display: flex;
+      justify-content: center;
+    
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+
+
+@media (min-width: 1025px) {
+  .nav {
+    height: 15vh;
+   }
+   
+   .navbar {
+     width: 100%;
+     background-color: #2081C3;
+     color: #F7F9F9;
+     height: 100%;
+   }
+   
+   .navbar ul {
+     height: 100%;
+     padding: 25px 30px;
+     display: flex;
+     /* flex-direction: row; */
+     list-style-type: none;
+   }
+
+  nav a {
+    font-size:16px;
+  }
+
+  .carousel img {
+    width:50%;
+  }
+  .carousel-item-active{
+    font-family: 'Lucida Grande';
+    font-size: 24px;
+    text-decoration: none;
+    text-color: blue;
+  }
+  .quotation1 {
+    font-family: 'Lucida Grande';
+    display: flex;
+    justify-content: center;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
+
