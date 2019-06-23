@@ -19,9 +19,9 @@ router.post('/cats', (req, res, next) => {
     //     res.redirect("/login")
     //     return;
     // }
-    debugger
+  
     var {imageUrl, streetName , name, age, gender, furColour, favouriteMusic, favouriteFood, favouriteGame, favouriteTvShow, yoga, scratching, purring}=req.body;
-    debugger
+    
 
     if(purring === "on") {
       purring = true
@@ -41,7 +41,6 @@ router.post('/cats', (req, res, next) => {
       yoga = false
     }
 
-    debugger
     const update = {
         imageUrl,
         streetName:streetName,

@@ -4,13 +4,10 @@ var router          = express.Router();
 
 router.get('/', (req, res) => {
     console.log("Profile session",req.session)
-    debugger
     if(req.session.user) {
-        debugger
         res.render("profile", {user: req.session.user})
     }
     else {
-        debugger
         res.redirect("/login");
     }
  
